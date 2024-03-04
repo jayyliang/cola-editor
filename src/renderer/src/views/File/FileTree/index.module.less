@@ -1,0 +1,30 @@
+.wrapper {
+  width: 20%;
+  height: 100%;
+  overflow-y: auto;
+  flex-shrink: 0;
+  border-right: 1px solid #ccc;
+}
+.chooseContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.folderTree {
+  :global {
+    .ant-tree-node-content-wrapper {
+      display: flex;
+      overflow: hidden;
+    }
+    .ant-tree-iconEle {
+      flex-shrink: 0;
+    }
+    .ant-tree-title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
