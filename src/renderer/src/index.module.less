@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  :global {
+    .ant-tabs-left {
+      width: 100%;
+      .ant-tabs-content-left {
+        height: 100%;
+      }
+      .ant-tabs-tabpane {
+        height: 100%;
+      }
+      .ant-tabs-tabpane {
+        padding-left: 0 !important;
+      }
+    }
+  }
+}
+.left {
+  flex-shrink: 0;
+}
+.content {
+  flex: 1;
+}
